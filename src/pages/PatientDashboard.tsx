@@ -1,10 +1,9 @@
-import React from 'react';
-import { useAuth } from '../context/AuthContext';
-import { useAppointments } from '../context/AppointmentContext';
-import { Card } from '../components/ui/Card';
+import { AlertCircle, Calendar, Clock, User } from 'lucide-react';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
-import { Calendar, Clock, MapPin, User, AlertCircle } from 'lucide-react';
+import { Card } from '../components/ui/Card';
+import { useAppointments } from '../context/AppointmentContext';
+import { useAuth } from '../context/AuthContext';
 
 export const PatientDashboard = () => {
     const { user } = useAuth();

@@ -1,12 +1,12 @@
-import React, { useState, useMemo } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import { MapPin, Calendar, Clock, Star, Shield, Award, User, AlertCircle } from 'lucide-react';
-import { doctors } from '../data/doctors';
-import { useAuth } from '../context/AuthContext';
-import { useAppointments } from '../context/AppointmentContext';
-import { Button } from '../components/ui/Button';
+import { AlertCircle, Award, Calendar, MapPin, Shield, Star, User } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Badge } from '../components/ui/Badge';
+import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
+import { useAppointments } from '../context/AppointmentContext';
+import { useAuth } from '../context/AuthContext';
+import { doctors } from '../data/doctors';
 
 export const DoctorProfile = () => {
     const { id } = useParams();
