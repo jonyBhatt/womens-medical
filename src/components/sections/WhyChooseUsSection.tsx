@@ -13,7 +13,7 @@ export const WhyChooseUsSection = () => {
 
                         <div className="relative z-10">
                             <h2 className="text-3xl font-bold mb-6">
-                                Why Choose<br />Health Care?
+                                Why Choose<br />SWMC?
                             </h2>
 
                             <ul className="space-y-4 mb-8">

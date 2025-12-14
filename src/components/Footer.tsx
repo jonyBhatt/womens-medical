@@ -1,4 +1,5 @@
-import { Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import Logo from "../assets/logo.png";
 
 export const Footer = () => {
     return (
@@ -6,12 +7,10 @@ export const Footer = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div className="col-span-1 md:col-span-1">
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white">
-                                <Heart className="h-5 w-5 fill-white" />
-                            </div>
+                        <Link to="/" className="flex items-center">
+                            <img src={Logo} alt="logo" className='size-24 object-contain' />
                             <span className="text-xl font-bold text-slate-900">SWMC</span>
-                        </div>
+                        </Link>
                         <p className="text-slate-500 text-sm leading-relaxed">
                             Making healthcare accessible, reliable, and hassle-free for everyone in Bangladesh.
                         </p>
