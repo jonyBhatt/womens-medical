@@ -1,8 +1,9 @@
+import { Menu, User, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../assets/logo.png';
 import { useAuth } from '../context/AuthContext';
 import { Button } from './ui/Button';
-import { Heart, Menu, X, User } from 'lucide-react';
 
 export const Navbar = () => {
     const { user, logout } = useAuth();
@@ -17,12 +18,10 @@ export const Navbar = () => {
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/80 backdrop-blur-md">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-26 items-center justify-between">
                     <div className="flex items-center gap-2">
                         <Link to="/" className="flex items-center gap-2">
-                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white">
-                                <Heart className="h-5 w-5 fill-white" />
-                            </div>
+                            <img src={Logo} alt="logo" className='size-24 object-contain' />
                             <span className="text-xl font-bold text-slate-900">SWMC</span>
                         </Link>
                     </div>
